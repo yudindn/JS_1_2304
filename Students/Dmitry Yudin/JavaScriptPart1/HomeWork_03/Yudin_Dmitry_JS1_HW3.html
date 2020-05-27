@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Alexander Shatalov">
+	<title>JS1.Yudin_Dmitry</title>
+	<style>
+		body { 
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(55, 47, 38);
+            color: rgb(213, 213, 213);
+            padding: 5%;
+		}
+
+        a.link-btn {
+        color: #fff;
+        background: #1f2224;
+        display:inline-block;
+        border: 1px solid #5d6267;        
+        font: bold 14px Arial, sans-serif;
+        text-decoration: none;
+        border-radius: 2px;
+        padding: 6px 20px;
+        border-radius: 10px;
+        }
+        a.link-btn:hover {
+            background-color: #c76a37;
+            border-color: #091117;
+		}
+	
+	</style>
+</head>
+<body>
+	<h2>Базовый курс JavaScript Домашнее задание №3</h2>
+
+
+	<h3>Задача №1</h3>
+	<p>С помощью цикла while вывести все простые числа в промежутке от 0 до 100.</p>
+		<script>
+			function missionOne() {
+				var i = 0,
+					maxNumber = 100,
+					j,
+					simpleNumber,
+					resultOne = 'Ответ: ';
+
+				do {
+					j = 1;
+
+					while (j<i) {
+						if (i%j == 0 && j!=1) {
+							simpleNumber = false;
+							break;
+						} else {
+							simpleNumber = true;
+						}
+						j++;
+					};
+
+					if (simpleNumber) {
+						resultOne+=i+ '; ';
+					}
+				} while (++i<=maxNumber);
+
+				console.log(resultOne);
+			}
+		</script>
+		<a class="link-btn" href="javascript:void(0);" onclick="missionOne();"> Вывести в консоль решение задачи №1</a>
+	
+	<hr>
+
+	<h3>Задача №4</h3>
+	<p>
+		Вывести с помощью цикла for числа от 0 до 9, НЕ используя тело цикла. <br>
+		То есть выглядеть должно вот так: <i>for(…){// здесь пусто}</i> 
+	</p>
+	<script>
+		function missionFour() {
+			var i = 0,
+				resultFour = 'Результат: ';
+
+			for (i = 0; i <= 9; resultFour+=i+'; ', i++) {
+				// здесь пусто
+			}
+			console.log(resultFour);
+			
+		}
+	</script>
+	<a class="link-btn" href="javascript:void(0);" onclick="missionFour();"> Вывести в консоль решение задачи №4</a>
+	
+	<hr>
+
+	<h3>Задача №5</h3>
+	<p>
+		Нарисовать пирамиду с помощью console.log, как показано на рисунке,<br>
+		только у вашей пирамиды должно быть 20 рядов, а не 5:<br>
+		<br>x
+		<br>xx
+		<br>xxx
+		<br>xxxx
+		<br>xxxxx
+	</p>
+	<script>
+		function missionFive() {
+			var resultFive = '';
+
+			for (var i=1; i<=20; i++) {
+				for (var j=1; j<=i; j++) {
+					resultFive+="x";
+				}
+				resultFive+='\n';
+			}
+
+			console.log(resultFive);
+		}
+	</script>
+
+		<a class="link-btn" href="javascript:void(0);" onclick="missionFive();">Вывести в консоль решение задачи №5</a>
+	</p>
+
+	<hr>
+	<h3>Задача №6</h3>
+	<p>
+		Создать игру "Быки и коровы", используя доступные инструменты
+	</p>
+	<!-- 		___$$____$$ \n
+				___$$______$$ \n
+				____$$____$$ \n
+				_____$$$$$$$$$$$$ \n
+				____$$$_$$$$$_$$$$$$$$$_____________$$$$$$$$ \n
+				__$$$___$$$$_________$$$$$$$$___$$$$$$$$$$$$$$$$ \n
+				_$$$___________$$___________$$$$$_____________$$$ \n
+				__$$$______$$$$$_______________________________$$ \n
+				___$$$$$$$$$_$$_______________________________$$$ \n
+				_____________$$____$$__________________$$______$$$ \n
+				______________$$____$$____$$____________$$_____$$$$ \n
+				_______________$$____$$___$$_____________$$_____$$$$ \n
+				________________$$$$$$$__$$$$$$$$$$$$$$$$__$$___$$$$ \n
+				_______________$$_$$_$$__$$_______$$__$$____$$__$$$ \n
+				______________$$__$$_$$_$$_______$$__$$_____$$__$$ \n
+				_____________$$__$$_$$_$$_______$$__$$______$$__$$ \n
+				____________$$$$$$_$$$$$_______$$$$$$______$$$$$$ \n ";
+
+	 -->
+	<a class="link-btn" href="https://geekbrains.ru/events/1008">Мууу-уу-у</a>
+
+</body>
+</html>

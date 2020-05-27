@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Cерёг приветствую </h1>
+    <h3>Домашнее звдвние JS1.1</h3>
+
+    <p>Поддержка атрибута async появилась в HTML5, он разрешает браузеру загружать js-файлы параллельно и выполнять сразу после загрузки, не дожидаясь обработки остальной части страницы.<br>
+    Атрибут defer позволяет браузеру начать загрузку js-файлов параллельно, не останавливая дальнейшую обработку страницы. Их выполнение происходит после полного разбора объектной модель документа (от англ. Document Object Model, сокращенно DOM), при этом браузер гарантирует последовательность на основе порядка подключения файлов.</p>
+        <li><a href="#" onclick="celciyToFarengeit();">Задать температуру в градусах по Цельсию. Вывести в <s>alert</s> консоль соответствующую температуру в градусах по Фаренгейту</a></li>
+        <li><a href="#" onclick="concNumberString();">Чему будет равно JS-выражение 1000 + "108"?</a><sup>*</sup></li>
+        <li><a href="#" onclick="nmaeVsasiliy();">Записать в name строку "Василий". Скопировать значение из name в admin</a></li>
+    <script>
+        "use strict";
+        // function celciyToFarengeit() {
+		// 	var degreeCelsius = +prompt ('Введите температуру в градусах по Цельсию: ');
+		// 	console.log (degreeCelsius + ' градусов по Цельсию = ' + ((9 / 5) * degreeCelsius + 32)
+		// 	+ ' градусов по Фаренгейту');
+        // }
+        function celciyToFarengeit() {
+			var degreeCelsius = +prompt ('Введите температуру в градусах по Цельсию: ');
+			console.log (degreeCelsius + ' °С = ' + ((9 / 5) * degreeCelsius + 32)
+			+ ' °F ');
+        }
+        function concNumberString() {
+			var a = 1000,
+				b = '108',
+				c = a + b;
+			console.log ('a=' + a + ' (' + typeof(a) + ') + b=' + b + ' (' + typeof(b) + ') = ' + c);
+        }
+        function nmaeVsasiliy() {
+			let name = '"Василий"';
+            let admin = name
+			console.log (admin);
+		}
+    </script>
+</body>
+</html>
